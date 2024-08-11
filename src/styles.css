@@ -1,5 +1,26 @@
 img {
-  width: 600px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.container,
+.c-form {
   position: absolute;
-  
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 16px;
+}
+.current-date-time {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(238, 232, 232, 0.8);
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 16px;
 }
