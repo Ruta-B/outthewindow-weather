@@ -1,26 +1,17 @@
-img {
-  width: 100%;
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/588/original/pexels-phantomant-1222561.jpg?1723395224");
+  background-repeat: no-repeat;
+  width: 600px;
+  background-position: center;
+  background-color: rgb(244, 235, 235);
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.container {
   position: relative;
-  text-align: center;
-}
-.container,
-.c-form {
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%, -50%);
+  display: block;
+
+  margin: 30px auto;
   background-color: white;
-  padding: 0.5rem;
-  text-align: center;
-  font-size: 16px;
-}
-.current-date-time {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(238, 232, 232, 0.8);
-  padding: 0.5rem;
-  text-align: center;
-  font-size: 16px;
 }
