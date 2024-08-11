@@ -1,17 +1,12 @@
 body {
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/588/original/pexels-phantomant-1222561.jpg?1723395224");
-  background-repeat: no-repeat;
-  width: 600px;
-  background-position: center;
-  background-color: rgb(244, 235, 235);
-  background-attachment: fixed;
-  background-size: contain;
+  background-color: #013743;
 }
 
 .container {
-  position: relative;
+  width: 400px;
+  height: 700px;
+  background-color: #a3bac0;
   display: block;
-
-  margin: 30px auto;
-  background-color: white;
+  margin: 20px auto;
+  padding: 50px;
 }
