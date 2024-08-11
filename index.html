@@ -3,65 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link rel="stylesheet" href="src/styles.css" />
     <title>window weather</title>
   </head>
   <body>
     <div class="container">
-   <div class="c-form">
-    <header> 
-      <form action="/submit" id="submit-form">
-<input type="search" placeholder = "Enter your city..." name ="name" id="location-city">
-<input type="submit" value="search" id="search-button" src="w/weather.html">
-      </form>
-    
-
-    </header>
-  </div>
-
-<main>
-      <div class="current-weather">
-        <div>
-          <h1 class="current-city" id="current-city">Stockholm</h1>
-          <p class="current-details">
-            <span id="current-date">Sunday 18:46</span>, moderate rain <br />
-           <span class="material-symbols-outlined">
-humidity_percentage
-</span> <strong>40 %</strong>, <span class="material-symbols-outlined">
-air
-</span> <strong>6 m/s</strong>
-          </p>
-        </div>
-        <div class="current-temperature">
-          <span class="current-temperature-icon">☀️</span
-          ><span class="current-temperature-value" id="current-temperature"
-            >22</span
-          ><span class="current-temperature-unit">°C</span>
-        </div>
+      <div class="c-form">
+        <header>
+          <form action="/submit" id="submit-form">
+            <input
+              type="search"
+              placeholder="Enter your city..."
+              name="name"
+              id="location-city"
+              class="location-form"
+            />
+            <input
+              type="submit"
+              value="Search"
+              id="search-button"
+              class="submit-input"
+              src="w/weather.html"
+            />
+          </form>
+        </header>
       </div>
-    
-</main>
-<div class="c-footer">
-   <footer>
-    <p>
-      This project was coded by
-      <a href="https://github.com/Ruta-B" target="_blank">Ruta Baumane </a>
-        and is on
-          <a href="https://github.com/Ruta-B/outthewindow-weather" target="_blank">
-            GitHub</a
-          >
-          and hosted on 
-          <a
-            href="https://window-weatherology.netlify.app/"
-            target="_blank"
-            >Netlify</a
-          >
-        </p>
-    </p>
-  </footer>
-</div>
-</div>
+
+      <main>
+        <div class="current-weather">
+          <div class="current-temperature">
+            <span class="current-temperature-icon"
+              ><img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/615/original/Sunny-icon.png?1723404628"
+                alt="Sunny-icon" /></span
+            ><br />
+            <span class="current-temperature-value" id="current-temperature"
+              >22</span
+            ><span class="current-temperature-unit">°C</span>
+          </div>
+          <div>
+            <h1 class="current-city" id="current-city">Stockholm</h1>
+            <p class="current-details">
+              <span id="current-date">Sunday 21:38</span>, sunny <br />
+              <span class="material-symbols-outlined">
+                humidity_percentage
+              </span>
+              <strong>40 %</strong>,
+              <span class="material-symbols-outlined"> air </span>
+              <strong>6 m/s</strong>
+            </p>
+          </div>
+        </div>
+      </main>
+      <div class="c-footer">
+        <footer>
+          <p>
+            This project was coded by
+            <a href="https://github.com/Ruta-B" target="_blank"
+              >Ruta Baumane
+            </a>
+            and is on
+            <a
+              href="https://github.com/Ruta-B/outthewindow-weather"
+              target="_blank"
+            >
+              GitHub</a
+            >
+            and hosted on
+            <a href="https://window-weatherology.netlify.app/" target="_blank"
+              >Netlify</a
+            >
+          </p>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>

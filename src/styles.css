@@ -1,6 +1,9 @@
 body {
   background-color: #013743;
 }
+strong {
+  color: #013743;
+}
 
 .container {
   width: 400px;
@@ -9,4 +12,53 @@ body {
   display: block;
   margin: 20px auto;
   padding: 50px;
+  border-radius: 25px;
+}
+
+.location-form {
+  width: 70%;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #a3bac0;
+  border-radius: 5px;
+}
+.submit-input {
+  width: 25%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #a3bac0;
+  border-radius: 5px;
+}
+
+.c-form {
+  padding-bottom: 10px;
+}
+.current-weather {
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  line-height: 1;
+}
+.current-temperature {
+  font-size: 46px;
+  font-weight: 900;
+}
+.current-city {
+  font-size: 54px;
+}
+.current-details {
+  font-size: 18px;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+.material-symbols-outlined {
+  font-size: 23px;
+  padding-right: 5px;
+  position: relative;
+  top: 4px;
+}
+.c-footer {
+  padding-top: 30px;
+  font-size: 13px;
+  text-align: left;
 }
