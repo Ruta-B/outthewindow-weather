@@ -28,8 +28,13 @@ strong {
   font-size: 16px;
   border: 1px solid #a3bac0;
   border-radius: 5px;
+  transition: all 200ms ease-in-out;
 }
-
+.submit-input:hover {
+  color: white;
+  background-color: #013743;
+  cursor: pointer;
+}
 .c-form {
   padding-bottom: 10px;
 }
