@@ -34,6 +34,8 @@ function getWeather(response) {
   let currentTemp = document.querySelector("#current-temperature");
   let cityElement = document.querySelector("#current-city");
   let temperature = Math.round(response.data.temperature.current);
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = response.data.condition.description;
   cityElement.innerHTML = response.data.city;
   currentTemp.innerHTML = temperature;
 }

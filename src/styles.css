@@ -49,7 +49,7 @@ strong {
   font-weight: 900;
 }
 .current-city {
-  font-size: 54px;
+  font-size: 52px;
 }
 .current-details {
   font-size: 18px;
@@ -63,7 +63,7 @@ strong {
   top: 4px;
 }
 .c-footer {
-  padding-top: 30px;
+  padding-top: 20px;
   font-size: 13px;
   text-align: left;
 }
