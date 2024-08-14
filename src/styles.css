@@ -63,7 +63,12 @@ strong {
   top: 4px;
 }
 .c-footer {
-  padding-top: 20px;
+  position: absolute;
+  padding-top: 25px;
   font-size: 13px;
-  text-align: left;
+  text-align: center;
+}
+#current-temperature-icon img {
+  width: 250px;
+  height: 250px;
 }

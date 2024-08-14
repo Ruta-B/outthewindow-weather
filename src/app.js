@@ -36,6 +36,10 @@ function getWeather(response) {
   let windSpeedElement = document.querySelector("#wind-speed");
   let currentDateELement = document.querySelector("#current-date");
   let date = new Date(response.data.time * 1000);
+  let icon = document.querySelector("#current-temperature-icon");
+  icon.innerHTML = `<img
+                src="${response.data.condition.icon_url}"
+                class="current-temperature-icon" />`;
   currentDateELement.innerHTML = formatDate(date);
   windSpeedElement.innerHTML = `${response.data.wind.speed} km/h `;
   humidityElement.innerHTML = `${response.data.temperature.humidity} % `;
