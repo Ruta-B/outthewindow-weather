@@ -28,6 +28,7 @@ let currentDateELement = document.querySelector("#current-date");
 let currentDate = new Date();
 
 currentDateELement.innerHTML = formatDate(currentDate);
+/*alert("hello");*/
 
 function getWeather(response) {
   let currentTemp = document.querySelector("#current-temperature");
