@@ -44,15 +44,18 @@ function getWeather(response) {
   currentTemp.innerHTML = temperature;
 }
 
-function search(event) {
-  event.preventDefault();
-  let searchInputElement = document.querySelector("#location-city");
-
-  let city = searchInputElement.value;
+function search(city) {
   let apiKey = "a7oe402d391da40bfcfe02337et07b50";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(getWeather);
 }
 
+function getSearchInput(event) {
+  event.preventDefault();
+  let searchInputElement = document.querySelector("#location-city");
+  search(searchInputElement.value);
+}
+
 let searchForm = document.querySelector("#submit-form");
-searchForm.addEventListener("submit", search);
+searchForm.addEventListener("submit", getSearchInput);
+search("Stockholm");
