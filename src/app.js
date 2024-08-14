@@ -36,7 +36,10 @@ function getWeather(response) {
   let temperature = Math.round(response.data.temperature.current);
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity-value");
-  humidityElement.innerHTML = `${response.data.temperature.humidity} %`;
+  let windSpeedElement = document.querySelector("#wind-speed");
+
+  windSpeedElement.innerHTML = `${response.data.wind.speed} km/h `;
+  humidityElement.innerHTML = `${response.data.temperature.humidity} % `;
   descriptionElement.innerHTML = response.data.condition.description;
   cityElement.innerHTML = response.data.city;
   currentTemp.innerHTML = temperature;
