@@ -24,10 +24,7 @@ function formatDate(date) {
   let formattedDay = days[day];
   return `${formattedDay} ${hours}:${minutes}`;
 }
-let currentDateELement = document.querySelector("#current-date");
-let currentDate = new Date();
 
-currentDateELement.innerHTML = formatDate(currentDate);
 /*alert("hello");*/
 
 function getWeather(response) {
@@ -37,7 +34,9 @@ function getWeather(response) {
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity-value");
   let windSpeedElement = document.querySelector("#wind-speed");
-
+  let currentDateELement = document.querySelector("#current-date");
+  let date = new Date(response.data.time * 1000);
+  currentDateELement.innerHTML = formatDate(date);
   windSpeedElement.innerHTML = `${response.data.wind.speed} km/h `;
   humidityElement.innerHTML = `${response.data.temperature.humidity} % `;
   descriptionElement.innerHTML = response.data.condition.description;
