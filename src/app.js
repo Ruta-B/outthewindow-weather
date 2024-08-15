@@ -46,6 +46,7 @@ function getWeather(response) {
   descriptionElement.innerHTML = response.data.condition.description;
   cityElement.innerHTML = response.data.city;
   currentTemp.innerHTML = temperature;
+  getForecast(response.data.city);
 }
 
 function search(city) {
@@ -59,8 +60,13 @@ function getSearchInput(event) {
   let searchInputElement = document.querySelector("#location-city");
   search(searchInputElement.value);
 }
+function getForecast(city) {
+  let apiKey = "a7oe402d391da40bfcfe02337et07b50";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
 
-function displayForecast() {
+function displayForecast(response) {
   let forecast = document.querySelector("#forecast");
   let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue", "Wed"];
   let forecastElement = "";
@@ -86,4 +92,3 @@ function displayForecast() {
 let searchForm = document.querySelector("#submit-form");
 searchForm.addEventListener("submit", getSearchInput);
 search("Stockholm");
-displayForecast();
