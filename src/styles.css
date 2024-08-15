@@ -14,7 +14,10 @@ strong {
   padding: 50px;
   border-radius: 25px;
 }
-
+.current-temperature-icon {
+  width: 200px;
+  height: 200px;
+}
 .location-form {
   width: 70%;
   font-size: 16px;
@@ -53,7 +56,6 @@ strong {
 .current-details {
   font-size: 18px;
   line-height: 1.5;
-  padding-bottom: 20px;
 }
 .material-symbols-outlined {
   font-size: 23px;
@@ -73,7 +75,8 @@ strong {
 }
 .weather-forecast-icon {
   text-align: center;
-  font-size: 20px;
+  width: 77px;
+  height: 77px;
   padding: 5px 5px;
 }
 
@@ -89,11 +92,7 @@ strong {
 
 .c-footer {
   margin-top: 0.1px solid rgba(0 0 0 0 0.5);
-  padding-top: 25px;
+  padding-top: 20px;
   font-size: 13px;
   text-align: center;
-}
-img {
-  width: 200px;
-  height: 200px;
 }
